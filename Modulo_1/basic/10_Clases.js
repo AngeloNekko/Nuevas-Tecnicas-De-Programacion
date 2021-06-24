@@ -28,7 +28,7 @@ class Rectangulo2 {
 
 var rectangulo2 = new Rectangulo2(6, 5);
 
-console.log(rectangulo2.calcularArea())
+//console.log(rectangulo2.calcularArea())
 
 
 //clase persona
@@ -75,6 +75,8 @@ class Punto {
 }
 const p1 = new Punto(20, 5);
 const p2 = new Punto(40, 50);
+console.log(p1);
+console.log(p2);
 
 // Construir clase persona y estudiante, extender estudiante con persona
 class Persona {
@@ -82,12 +84,15 @@ class Persona {
         this.nombre = nombre;
     }
     Estudiante() {
-        console.log(this.nombre + 'Estudiante de institucion');
+        console.log(this.nombre );
     }
 }
 
-class Mario extends Persona {
-    Estudiante() {
-        console.log(this.nombre + 'ITQ');
+class Estudiante extends Persona {
+    Estudiante(nombre) {
+        console.log(`${nombre}`);
     }
 }
+
+var estu1 = new Estudiante ("Angelo");
+console.log(estu1);
